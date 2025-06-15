@@ -1,67 +1,18 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Thin.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Light.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-family: "DMSans_Regular";
+  src: url("../fonts/DMSans-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-SemiBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto-Bold";
-  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-ExtraBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Black.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -84,83 +35,73 @@ button {
 /*style header*/
 .header{
   width: 100%;
-  max-height: 56px;
-  padding: 0 188px;
+  padding-bottom: 27px;
   display: flex;
   justify-content: space-between;
 }
-.menu__list, .header-options{
-  display: flex;
-}
-.menu__list {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.menu__item{
-  margin-right: 28px;
-}
-.menu__link{
-   font-family: "Roboto-Bold";
-   font-size: 16px;
-   color: #1C1B1B; 
-   display: flex;
-   white-space: nowrap;
-}
-.header__logo-img{
-  width: 80px;
-  height: 25px;
-  margin-top: 16px;
-  margin-bottom: 15px;
-  margin-right: auto;
-  margin-left: 83px;
-}
-.header-options__link{
-  margin: 18px 15px 18px;
-   background-color: transparent;
-}
-.header-options__search{
- margin: 8px 7px 8px; 
- background-color: transparent;
-}
-.header-options__cart {
-   background-color: transparent;
+
+.header_logo_img {
+  width: 147px;
+  height: 29px;
 }
 
-/*style preview*/
-.preview{
+.menu_list {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #F0EFEB;
+  align-items: center;
+  gap: 70px;
+  padding-top: 4px;
 }
-.preview__img{
-  width: 599px;
-  height: 521px;
-  display: flex;
+
+.menu_link{
+  font-family: "DMSans_Regular";
+ font-size: 16px;
+ color: #161616;
 }
-.preview-content {
-  max-width: 544px;
+
+.header_options_search {
+  background-color: transparent;
+  margin-right: 30px;
+}
+
+.header_options_menu {
+ background-color: transparent;
+}
+
+/* style preview */
+.preview_img{
+  width: 411px;
+}
+
+.content{
+display: flex;
+background-color: #154444;
+}
+
+.preview_content{
+  margin: 101px 0 0 100px;
+  color: #FFF;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-.main-title {
-  font-family: "Roboto-Bold"; 
-  font-size: 60px;
+
+.main_title{
+  font-family: "Montserrat";
+  font-size: 56px;
 }
+
 .description{
-  font-family: "Roboto-Regular";
-  font-size: 24px;
-  padding: 42px 39px 26px 2px;
+  font-family: "DMSans_Regular";
+  font-size: 20px;
+  max-width: 488px;
+  margin-top: 20px;
+  margin-bottom: 35px;
 }
-.button{
-  font-family: "Roboto-Regular";
-  font-size: 17px;
-  color: #FFF;
-  display: inline-block;
-  padding: 7px 23px 9px;
-  background-color: #000;
-  border-radius:100px;
-  max-width: max-content;
+
+.button_explore{
+  font-family: "DMSans_Regular";
+  font-size: 20px;
+  padding: 16px 26px;  
+  color: #154444;
+  background-color: #FFF;
+  width: max-content;
 }
