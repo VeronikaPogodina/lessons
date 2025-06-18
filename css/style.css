@@ -1,16 +1,22 @@
 @font-face {
-  font-family: "DMSans_Regular";
-  src: url("../fonts/DMSans-Regular.ttf") format("truetype");
+  font-family: "Montserrat-Light";
+  src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
-
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-family: "Montserrat-SemiBold";
+  src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-display: swap;
 }
 * {
@@ -33,75 +39,126 @@ button {
   cursor: pointer;
 }
 /*style header*/
-.header{
+.header {
   width: 100%;
-  padding-bottom: 27px;
   display: flex;
   justify-content: space-between;
+  padding: 0 70px;
 }
 
 .header_logo_img {
-  width: 147px;
-  height: 29px;
+  width: 140px;
+  height: 63px;
+  margin: 14px 0;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
 }
 
 .menu_list {
   display: flex;
+  gap: 40px;
+}
+
+.menu_link {
+  font-family: "Montserrat-Regular";
+  font-size: 16px;
+  color: #000;
+}
+
+.button_consult {
+  font-family: "Montserrat-SemiBold";
+  font-size: 14px;
+  color: #FFF; 
+  padding: 16px 20px;
+  background-color: #1438A5;
+}
+
+.button_enter {
+  font-family: "Montserrat-SemiBold";
+  font-size: 14px;
+  color: #FFF; 
+  padding: 16px 31px;
+  background-color: #BE1736;
+}
+
+.header_button_wrap {
   align-items: center;
-  gap: 70px;
-  padding-top: 4px;
+  display: flex;
+  gap: 20px;
 }
 
-.menu_link{
-  font-family: "DMSans_Regular";
- font-size: 16px;
- color: #161616;
+.preview_content {
+  background-color: #DEDEDE;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.header_options_search {
-  background-color: transparent;
-  margin-right: 30px;
+.main_title {
+  font-family: "Montserrat-SemiBold";
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
-.header_options_menu {
- background-color: transparent;
+.description {
+  font-family: "Montserrat-Regular";
+  font-size: 16px;
+  max-width: 500px;
 }
 
-/* style preview */
-.preview_img{
-  width: 411px;
-}
-
-.content{
-display: flex;
-background-color: #154444;
-}
-
-.preview_content{
-  margin: 101px 0 0 100px;
-  color: #FFF;
+.titles {
   display: flex;
   flex-direction: column;
+  max-width: 640px;
+  margin-top: 118px;
+  margin-left: 70px;
 }
 
-.main_title{
-  font-family: "Montserrat";
-  font-size: 56px;
+.preview_img {
+  width: 400px;
 }
 
-.description{
-  font-family: "DMSans_Regular";
-  font-size: 20px;
-  max-width: 488px;
-  margin-top: 20px;
-  margin-bottom: 35px;
+.products {
+  font-family: "Montserrat-Regular";
+  font-size: 12px;
+  color: #575756;
 }
 
-.button_explore{
-  font-family: "DMSans_Regular";
-  font-size: 20px;
-  padding: 16px 26px;  
-  color: #154444;
-  background-color: #FFF;
-  width: max-content;
+.stock_market_reviews {
+  color: #1455D8;
+}
+
+.review_1 {
+  font-size: 12px;
+
+}
+.head_product_card {
+font-family: "Montserrat-Regular";
+color: #000;
+}
+
+.date {
+  font-family: "Montserrat-SemiBold";
+  color: #575756;
+  /* border-top: #000;
+  border-bottom: #000;
+  border-width: 1px; */
+}
+
+.title_of_review {
+  font-family: "Montserrat-SemiBold";
+  font-size: 18px;
+}
+
+.description_of_card {
+  font-family: "Montserrat-Light";
+}
+
+.details {
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  color: #1438A5;
 }
