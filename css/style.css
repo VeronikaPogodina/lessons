@@ -90,17 +90,22 @@ button {
   gap: 20px;
 }
 
+.content {
+background-color: #F5F5F5;
+}
+
 .preview_content {
   background-color: #DEDEDE;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .main_title {
   font-family: "Montserrat-SemiBold";
   font-size: 36px;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 
 .description {
@@ -113,18 +118,33 @@ button {
   display: flex;
   flex-direction: column;
   max-width: 640px;
-  margin-top: 118px;
-  margin-left: 70px;
+  margin: 0 0 0 70px;
 }
 
 .preview_img {
   width: 400px;
+  margin: 0 0 0 140px;
+}
+
+.button_news {
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  padding: 6px 61px 7px;
+  width: max-content;
+  transform: rotate(-90deg);
+  background-color: #575756;
+  border-radius: 10px 10px 0 0;
+  height: 30px;
+  color: #FFF;
+  position: absolute;
+  right: -160px;
 }
 
 .products {
   font-family: "Montserrat-Regular";
   font-size: 12px;
   color: #575756;
+  margin: 20px 0 50px 70px;
 }
 
 .stock_market_reviews {
@@ -133,32 +153,64 @@ button {
 
 .review_1 {
   font-size: 12px;
-
+  background-color: #FFF;
+  padding: 28px 38px 16px 31px;
+  /* width: max-content; */
+  width: 310px;
+  height: 300px;
 }
 .head_product_card {
-font-family: "Montserrat-Regular";
-color: #000;
+  font-family: "Montserrat-Regular";
+  color: #000;
+  margin: 0 0 10px 0;
 }
 
 .date {
   font-family: "Montserrat-SemiBold";
   color: #575756;
-  /* border-top: #000;
-  border-bottom: #000;
-  border-width: 1px; */
+  border-top: 1px solid #57575620;
+  border-bottom:1px solid #57575620;
+  width: 100%;
+  padding: 17.5px 0;
+  text-align: center;
 }
 
 .title_of_review {
   font-family: "Montserrat-SemiBold";
   font-size: 18px;
+  margin: 20px 0 10px 0;
 }
 
 .description_of_card {
   font-family: "Montserrat-Light";
+  margin: 0 0 20px 0;
 }
 
 .details {
   font-family: "Montserrat-Regular";
   font-size: 14px;
   color: #1438A5;
+  margin: 0 0 0 78px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button_all_reviews {
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  padding: 16.5px 87px;
+  background-color: #FFF;
+  border: 2px solid #575756;
+  margin: 50px 0 100px 0;
 }
