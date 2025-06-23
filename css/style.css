@@ -1,30 +1,34 @@
 @font-face {
-  font-family: "Montserrat-Light";
-  src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+  font-family: "OpenSans_Bold";
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
   font-style: normal;
-  font-weight: 300;
+  font-weight: 700;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "Montserrat-Regular";
-  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Montserrat-SemiBold";
-  src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-family: "OpenSans_SemiBold";
+  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
   font-style: normal;
   font-weight: 600;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "OpenSans_Regular";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
   box-sizing: border-box;
+  transition: all 0.2s ease-out;
 }
 
 a {
@@ -38,179 +42,162 @@ li {
 button {
   cursor: pointer;
 }
-/*style header*/
-.header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 70px;
+/*style body*/
+.preview {
+  background-color: #F1F8FC;
 }
 
-.header_logo_img {
-  width: 140px;
-  height: 63px;
-  margin: 14px 0;
-}
-
-.menu{
-  display: flex;
-  align-items: center;
-}
-
-.menu_list {
-  display: flex;
-  gap: 40px;
-}
-
-.menu_link {
-  font-family: "Montserrat-Regular";
-  font-size: 16px;
-  color: #000;
-}
-
-.button_consult {
-  font-family: "Montserrat-SemiBold";
-  font-size: 14px;
-  color: #FFF; 
-  padding: 16px 20px;
-  background-color: #1438A5;
-}
-
-.button_enter {
-  font-family: "Montserrat-SemiBold";
-  font-size: 14px;
-  color: #FFF; 
-  padding: 16px 31px;
-  background-color: #BE1736;
-}
-
-.header_button_wrap {
-  align-items: center;
-  display: flex;
-  gap: 20px;
-}
-
-.content {
-background-color: #F5F5F5;
-}
-
-.preview_content {
-  background-color: #DEDEDE;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-}
-
-.main_title {
-  font-family: "Montserrat-SemiBold";
-  font-size: 36px;
-  margin: 0 0 20px 0;
-}
-
-.description {
-  font-family: "Montserrat-Regular";
-  font-size: 16px;
-  max-width: 500px;
-}
-
-.titles {
-  display: flex;
-  flex-direction: column;
-  max-width: 640px;
-  margin: 0 0 0 70px;
-}
-
-.preview_img {
-  width: 400px;
-  margin: 0 0 0 140px;
-}
-
-.button_news {
-  font-family: "Montserrat-Regular";
-  font-size: 14px;
-  padding: 6px 61px 7px;
-  width: max-content;
-  transform: rotate(-90deg);
-  background-color: #575756;
-  border-radius: 10px 10px 0 0;
-  height: 30px;
-  color: #FFF;
-  position: absolute;
-  right: -160px;
-}
-
-.products {
-  font-family: "Montserrat-Regular";
-  font-size: 12px;
-  color: #575756;
-  margin: 20px 0 50px 70px;
-}
-
-.stock_market_reviews {
-  color: #1455D8;
-}
-
-.review_1 {
-  font-size: 12px;
-  background-color: #FFF;
-  padding: 28px 38px 16px 31px;
-  /* width: max-content; */
-  width: 310px;
-  height: 300px;
-}
-.head_product_card {
-  font-family: "Montserrat-Regular";
-  color: #000;
-  margin: 0 0 10px 0;
-}
-
-.date {
-  font-family: "Montserrat-SemiBold";
-  color: #575756;
-  border-top: 1px solid #57575620;
-  border-bottom:1px solid #57575620;
-  width: 100%;
-  padding: 17.5px 0;
+.title {
+  font-family: "OpenSans_SemiBold";
+  font-size: 40px;
+  color: #333333;
+  padding: 40px 0 26px 0;
   text-align: center;
 }
 
-.title_of_review {
-  font-family: "Montserrat-SemiBold";
-  font-size: 18px;
-  margin: 20px 0 10px 0;
+.leadership_underline {
+width: 100px;
+height: 4px;
+background-color: #2B9AD6;
+justify-self: center;
+margin-bottom: 60px;
 }
 
-.description_of_card {
-  font-family: "Montserrat-Light";
-  margin: 0 0 20px 0;
-}
-
-.details {
-  font-family: "Montserrat-Regular";
-  font-size: 14px;
-  color: #1438A5;
-  margin: 0 0 0 78px;
-}
-
-.cards {
+.card {
+  width: 293px;
+  height: 361px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
+}
+
+.first_line .card:hover:nth-child(1) {
+  background-image: url("/img/Rodion_hover_background.png");
+  background-size: contain;
+}
+
+.first_line .card:hover:nth-child(2) {
+  background-image: url("/img/Sergey_hover_background.png");
+  background-size: contain;
+}
+
+.first_line .card:hover:nth-child(3) {
+  background-image: url("/img/Maria_hover_background.png");
+  background-size: contain;
+}
+
+.second_line .card:hover:nth-child(1) {
+  background-image: url("/img/Eugene_hover_background.png");
+  background-size: contain;
+}
+
+.second_line .card:hover:nth-child(2) {
+  background-image: url("/img/Fred_hover_background.png");
+  background-size: contain;
+}
+
+.card:hover .title_of_card {
+  color: #FFFFFF;
+}
+
+.card:hover .social_icon {
+  background-image: url("/img/Arrow_right.png");
+}
+
+.card:hover .description_of_card {
+  color: #FFFFFF;
+}
+
+.image_wrapper {
+  padding-top: 13px;
+  display: flex;
+  position: relative;
   justify-content: center;
 }
 
-.reviews {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.main_img{
+  width: 220px;
+  height: 224px;
+  background-size: contain;
 }
 
-.button_all_reviews {
-  font-family: "Montserrat-Regular";
-  font-size: 14px;
-  padding: 16.5px 87px;
-  background-color: #FFF;
-  border: 2px solid #575756;
-  margin: 50px 0 100px 0;
+.first_line .card:nth-child(1) .main_img {
+  background-image: url("/img/Rodion_default.png");
+}
+
+.first_line .card:nth-child(2) .main_img {
+  background-image: url("/img/Sergey_default.png");
+}
+
+.first_line .card:nth-child(3) .main_img {
+  background-image: url("/img/Maria_default.png");
+}
+
+.second_line .card:nth-child(1) .main_img {
+  background-image: url("/img/Eugene_default.png");
+}
+
+.second_line .card:nth-child(2) .main_img {
+  background-image: url("/img/Fred_default.png");
+}
+
+.first_line .card:hover:nth-child(1) .main_img {
+  background-image: url("/img/Rodion_hover.png");
+}
+
+.first_line .card:hover:nth-child(2) .main_img {
+  background-image: url("/img/Sergey_hover.png");
+}
+
+.first_line .card:hover:nth-child(3) .main_img {
+  background-image: url("/img/Maria_hover.png");
+}
+
+.second_line .card:hover:nth-child(1) .main_img {
+  background-image: url("/img/Eugene_hover.png");
+}
+
+.second_line .card:hover:nth-child(2) .main_img {
+  background-image: url("/img/Fred_hover.png");
+}
+
+.social_icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-image: url("/img/linkedin_item.png");
+  background-size: cover;
+}
+
+.title_wrapper {
+  padding-left: 27px;
+}
+
+.title_of_card {
+  font-family: "OpenSans_Bold";
+  font-size: 24px;
+  color: #194F94;
+  padding-top: 20px;
+}
+
+.description_of_card {
+  font-family: "OpenSans_Regular";
+  font-size: 17px;
+  color: #525252;
+}
+
+.first_line {
+  display: flex;
+  flex-direction: row;
+  gap: 169px;
+  justify-content: center;
+}
+
+.second_line {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: row;
+  gap: 176px;
+  justify-content: center;
 }
