@@ -17,10 +17,16 @@ a {
   text-decoration: none;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
 .border_of_form{
   width: max-content;
   height: max-content;
   padding: 25px 35px 25px 30px;
+
 }
 
 .form {
@@ -34,12 +40,14 @@ a {
 .first_block{
   display: flex;
   flex-direction: column;
+  padding: 10px 100px 10px 10px;
 }
+
 .third_block{
   display: flex;
   flex-wrap: wrap;
   gap: 10px 20px; 
-  }
+}
 
 .third_block label {
   width: calc(25% - 20px);
@@ -71,8 +79,8 @@ span {
 }
 
 .form_input {
+  flex: 2;
   border: 1px solid #b5b5b5;
-  width: 250px;
 }
 
 .form_row {
@@ -82,4 +90,29 @@ span {
 .button {
   width: max-content;
   padding: 10px;
+}
+
+.required_field {
+  color: red;
+  margin-left: 0;
+}
+
+.form_input_name {
+  flex: 1;
+}
+
+#gender {
+  flex: 2;
+}
+
+.third_block {
+  padding: 10px 100px 10px 10px;
+}
+
+legend {
+  margin-left: 20px;
+}
+
+.animals {
+margin-right: 5px;
 }

@@ -5,35 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/style.css" rel="stylesheet" type="text/css">
-  <title>Document</title>
+  <title>Форма заявки на работу в зоопарке</title>
 </head>
 
 <body>
-  <div class="border_of_form">
+  <section class="border_of_form">
     <h1 class="title">Форма заявки на работу в зоопарке</h1>
     <p class="subtitle">Пожалуйста, заполните форму. Обязательные поля помечены *</p>
     <form class="form">
       <fieldset>
-        <legend class="legend">Контактная информация</legend>
+        <legend>Контактная информация</legend>
         <div class="first_block">
 
           <div class="form_row">
-            <label for="user-name" class="form_label">
-              <span class="form_input_name">Имя*</span>
+            <label for="user-name">
+              <span class="form_input_name">Имя<span class="required_field">*</span></span>
               <input type="text" class="form_input" name="user-name">
             </label>
           </div>
 
           <div class="form_row">
-            <label for="user-phone" class="form_label">
+            <label for="user-phone">
               <span class="form_input_name">Телефон</span>
               <input type="tel" class="form_input" name="user-phone">
             </label>
           </div>
 
           <div class="form_row">
-            <label for="user-mail" class="form_label">
-              <span class="form_input_name">Email*</span>
+            <label for="user-mail">
+              <span class="form_input_name">Email<span class="required_field">*</span></span>
               <input type="email" class="form_input" name="user-mail">
             </label>
           </div>
@@ -43,12 +43,12 @@
     </form>
     <form class="form">
       <fieldset>
-        <legend class="legend">Персональная информация</legend>
+        <legend>Персональная информация</legend>
         <div class="first_block">
 
           <div class="form_row">
             <label for="user-name">
-              <span class="form_input_name">Возраст*</span>
+              <span class="form_input_name">Возраст<span class="required_field">*</span></span>
               <input type="number" class="form_input" name="user-age">
             </label>
           </div>
@@ -74,45 +74,45 @@
     </form>
     <form class="form">
       <fieldset>
-        <legend class="legend">Выберите ваших любимых животных</legend>
+        <legend>Выберите ваших любимых животных</legend>
         <div class="third_block">
           <label>
-            <input type="checkbox" name="animals" value="zebra">
+            <input type="checkbox" name="animals" value="zebra" class="animals">
             Зебра
           </label>
           <label>
-            <input type="checkbox" name="animals" value="cat">
+            <input type="checkbox" name="animals" value="cat" class="animals">
             Кошка
           </label>
           <label>
-            <input type="checkbox" name="animals" value="anaconda">
+            <input type="checkbox" name="animals" value="anaconda" class="animals">
             Анаконда
           </label>
           <label>
-            <input type="checkbox" name="animals" value="human">
+            <input type="checkbox" name="animals" value="human" class="animals">
             Человек
           </label>
           <label>
-            <input type="checkbox" name="animals" value="elephant">
+            <input type="checkbox" name="animals" value="elephant" class="animals">
             Слон
           </label>
           <label>
-            <input type="checkbox" name="animals" value="antelope">
+            <input type="checkbox" name="animals" value="antelope" class="animals">
             Антилопа
           </label>
           <label>
-            <input type="checkbox" name="animals" value="pigeon">
+            <input type="checkbox" name="animals" value="pigeon" class="animals">
             Голубь
           </label>
           <label>
-            <input type="checkbox" name="animals" value="crab">
+            <input type="checkbox" name="animals" value="crab" class="animals">
             Краб
           </label>
         </div>
       </fieldset>
     </form>
     <button class="button">Отправить информацию</button>
-  </div>
+  </section>
 </body>
 
 </html>
