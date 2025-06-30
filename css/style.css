@@ -1,31 +1,14 @@
 @font-face {
-  font-family: "Raleway_Bold";
-  src: url("../fonts/Raleway-Bold.ttf") format("truetype");
+  font-family: "LibertinusMath";
+  src: url("../fonts/LibertinusMath-Regular.ttf") format("truetype");
   font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Raleway_Medium";
-  src: url("../fonts/Raleway-Medium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Raleway_Light";
-  src: url("../fonts/Raleway-Light.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-display: swap;
 }
 
 * {
   margin: 0;
   padding: 0;
-  border: 0;
   outline: 0;
   box-sizing: border-box;
 }
@@ -34,67 +17,69 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style: disc;
-  padding-left: 20px;
-  font-family: "Raleway_Light";
-  font-size: 16px;
-  color: #434364;
-  max-width: 80%;
+.border_of_form{
+  width: max-content;
+  height: max-content;
+  padding: 25px 35px 25px 30px;
 }
 
-button {
-  cursor: pointer;
-}
-
-/* style body */
-.title {
-  font-size: 36px;
-  color: #434364;
-  font-family: "Raleway_Medium";
-  text-align: center;
-}
-
-.line{
-  justify-self: center;
-  border-bottom: 2px solid #FDBFA3;
-  width: 380px;
-  margin-bottom: 40px;
-}
-
-h1 {
-  font-family: "Raleway_Bold";
-  font-size: 16px;
-  color: #434364;
-}
-
-p {
-  font-family: "Raleway_Light";
-  font-size: 16px;
-  color: #434364;
-  max-width: 80%;
-  line-height: 24px;
-  padding-bottom: 20px;
-}
-
-.company_data {
-  font-family: "Raleway_Bold";
-  font-size: 16px;
-}
-
-h2 {
-  padding-bottom: 20px;
-}
-
-h2:first-of-type {
-  padding-bottom: 0px;
-}
-
-.h2_no_margin_bottom {
-  padding-bottom: 0px;
-}
-
-body {
+.form {
+  width: 500px;
+  height: max-content;
   display: flex;
   flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.first_block{
+  display: flex;
+  flex-direction: column;
+}
+.third_block{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px; 
+  }
+
+.third_block label {
+  width: calc(25% - 20px);
+  display: flex;
+  align-items: center;
+}
+
+label {
+display: flex;
+margin-bottom: 5px;
+}
+
+.title {
+  font-family: "LibertinusMath";
+  font-size: 40px;
+  padding-bottom: 7px;
+}
+
+.subtitle {
+  color: #333834;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+span {
+ font-family: "LibertinusMath";
+ font-size: 16px;
+ margin-left: 15px;
+}
+
+.form_input {
+  border: 1px solid #b5b5b5;
+  width: 250px;
+}
+
+.form_row {
+  margin: 5px 0;
+}
+
+.button {
+  width: max-content;
+  padding: 10px;
 }
